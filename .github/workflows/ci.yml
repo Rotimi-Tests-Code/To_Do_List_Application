@@ -1,0 +1,24 @@
+name: To Do List CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v3
+
+        - name: Set up JDK 19
+          uses: actions/checkout@v3
+          with:
+            java-version: '19'
+            distributed: 'temurin'
+
+        - name: Build with Maven
+          run: mvn -B clean verify
