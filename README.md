@@ -4,7 +4,7 @@ A simple Java based To Do List app built with:
 
 - Object Oriented Programming 
 - File I/O for persistent storage 
-- JUnit testing 
+- JUnit testing performed
 - Maven for dependency management 
 - GitHub Actions for CI/CD 
 
